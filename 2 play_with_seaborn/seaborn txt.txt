@@ -1,0 +1,104 @@
+parameters used = hue="pass the colm",style="pass the colm",colm="pass th no of  colm",row="same" ,kind="you know",size="pass the name of the colm"
+
+figure lvl functions
+sns.relplot(kind=) is used for line plot and scatter plot  also by relplot you can draw facet plot
+
+
+
+
+
+
+
+
+
+# figure level -> displot(kind=)
+# axes level -> histplot -> kdeplot -> rugplot
+
+
+
+
+
+
+sns.catplot()👈its also a fig lvl fn 
+kind===== strip,swarm,box,volin,
+also here also you can do faceting concept by passing row and colm parameters
+
+
+sns.boxplot()
+
+
+
+sns.pointplot()
+
+
+
+sns.barplot
+
+
+sns.countplot()--->its a barplot ,just it counts and draw the plot 
+
+
+
+
+
+
+
+
+
+
+
+regression plots 
+sns.regplot()-----------> hue parameter is not available here    its a axis lvl fn
+sns.lmplot()--------------------------------its available here
+sns.residplot()------------------------for checking how much our bestfit line is good , more datapoints aare falling in it or not its a fig lvl fn
+
+
+
+
+
+
+
+sns.paiplot()  for drawing graphs between every colm    
+
+and 👇 its more better approch
+
+# map_diag -> map_offdiag
+g = sns.PairGrid(data=iris,hue='species')
+g.map_diag(sns.boxplot)
+g.map_offdiag(sns.kdeplot)
+
+
+
+
+sns.jointplot(data=tips,x='total_bill',y='tip',kind='kde',hue='sex')
+
+
+
+
+
+
+
+
+
+
+
+
+
+jodi kunu din scatter plot dai korta thaila janbi uto akto numerical vs numerical 
+colm er lea bota kintu taw jodi kunu din amon kori dilo tukhe je categorical vs numerical ba 
+categoricalvs categorical er dilo thaila 
+sob somoy use korbi sns.stripplot ba swarmplot( ) er concept
+
+
+
+
+if you have to draw barplot in categorical colm do it by using sns.countplot(data=,x=,y=)
+
+
+
+
+
+
+
+
+point plot and error bar in barplot (hold)
